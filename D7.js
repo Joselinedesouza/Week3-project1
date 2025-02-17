@@ -65,6 +65,13 @@ console.log(total);
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
+const incrementArray = function (array, n) {
+  return array.map((num) => num + n);
+};
+const numbersArr = [3, 5, 6, 7];
+const incrementValue = 3;
+const newArray = incrementArray(numbersArr, incrementValue);
+console.log(newArray);
 
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
