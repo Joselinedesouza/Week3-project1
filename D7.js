@@ -56,11 +56,13 @@ console.log(Somma);
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
 const Sum2 = function (array) {
-  return array.reduce((Sum, num) => sum + num, 0);
+  const total = array.reduce((Sum, num) => {
+    return sum + num;
+  }, 0);
+  return total;
 };
-const arreyNumers1 = [5, 6];
-const total = Sum2(arreyNumers1);
-console.log(total);
+
+console.log(Sum2);
 
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
@@ -77,7 +79,10 @@ console.log(newArray);
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
-
+const lenghtStrings = (array) => {
+  return array.map((string) => string.length);
+};
+console.log(lenghtStrings(["EPICODE", "is", "great"]));
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
